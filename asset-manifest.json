@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/atlys-auth/static/css/main.1c16f95b.css",
-    "main.js": "/atlys-auth/static/js/main.760306e4.js",
+    "main.js": "/atlys-auth/static/js/main.cce0634f.js",
     "index.html": "/atlys-auth/index.html",
     "main.1c16f95b.css.map": "/atlys-auth/static/css/main.1c16f95b.css.map",
-    "main.760306e4.js.map": "/atlys-auth/static/js/main.760306e4.js.map"
+    "main.cce0634f.js.map": "/atlys-auth/static/js/main.cce0634f.js.map"
   },
   "entrypoints": [
     "static/css/main.1c16f95b.css",
-    "static/js/main.760306e4.js"
+    "static/js/main.cce0634f.js"
   ]
 }
