@@ -2,12 +2,14 @@
 
 import React, { useState } from "react";
 import Signup from "./Signup";
+import { useNavigate } from "react-router-dom";
 
 const Login: React.FC = () => {
   const [isSignupOpen, setSignupOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogin = () => {
-    window.location.href = "/dashboard";
+    navigate("/dashboard");
   };
 
   const openSignupModal = () => {
