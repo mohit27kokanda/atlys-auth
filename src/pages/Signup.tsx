@@ -1,9 +1,8 @@
-// src/pages/Signup.tsx
-
 import React from "react";
 import { Link } from "react-router-dom";
+import withModal from "../components/withModal";
 
-const Signup: React.FC = () => {
+const Signup: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
   return (
     <div className="text-white">
       <h2 className="mb-4 text-lg font-semibold">SIGN UP</h2>
@@ -33,7 +32,11 @@ const Signup: React.FC = () => {
       </form>
       <div className="mt-4">
         Already have an account?{" "}
-        <Link to="/login" className="text-blue-400 hover:underline">
+        <Link
+          to="/login"
+          onClick={closeModal}
+          className="text-blue-400 hover:underline"
+        >
           Login
         </Link>
       </div>
@@ -41,4 +44,4 @@ const Signup: React.FC = () => {
   );
 };
 
-export default Signup;
+export default withModal(Signup);

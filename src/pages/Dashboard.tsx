@@ -91,17 +91,7 @@ const Dashboard: React.FC = () => {
       </div>
 
       {isSignupOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="relative bg-gray-800 p-8 rounded-lg w-full max-w-md">
-            <button
-              onClick={closeSignup}
-              className="absolute top-3 right-3 text-gray-400 hover:text-white text-xl"
-            >
-              &times;
-            </button>
-            <Signup />
-          </div>
-        </div>
+        <Signup closeModal={closeSignup} applyBackgroundOpacity={true} />
       )}
     </div>
   );
