@@ -1,6 +1,7 @@
 // src/pages/Signup.tsx
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Signup: React.FC = () => {
   return (
@@ -32,9 +33,9 @@ const Signup: React.FC = () => {
       </form>
       <div className="mt-4">
         Already have an account?{" "}
-        <a href="/login" className="text-blue-400 hover:underline">
+        <Link to="/login" className="text-blue-400 hover:underline">
           Login
-        </a>
+        </Link>
       </div>
     </div>
   );
